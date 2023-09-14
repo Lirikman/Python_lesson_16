@@ -1,0 +1,7 @@
+.img_main{
+    background-image: images/python.png;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
