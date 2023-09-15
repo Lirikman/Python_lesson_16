@@ -7,12 +7,12 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/parsing')
+@app.route('/parsing.html')
 def parsing():
     return 'Pasring vacancy python'
 
-@app.route('/python')
-def python_page():
+@app.route('/resume.html')
+def resume():
     return 'Python the best language programming'
 
 

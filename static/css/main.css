@@ -1,7 +1,35 @@
-.img_main{
-    background-image: images/python.png;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+.main_title{
+    color: yellow;
+    font-size: 25pt;
+    text-shadow: 1px 0 1px #000
+    }
+
+.list_text{
+    color: white;
+    font-size: 23pt;
+#    text-shadow: 1px 0 1px;
+    text-align: center
 }
+
+.text_solid{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: lime
+}
+
+.text_dashed{
+    font-family: Georgia, "Times New Roman", serif;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: yellow
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 500px;
+    background: #8C959D;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 3px
+    }
