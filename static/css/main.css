@@ -1,35 +1,37 @@
 .main_title{
     color: yellow;
-    font-size: 25pt;
-    text-shadow: 1px 0 1px #000
+    font-size: 28pt;
+    text-shadow: 1px 0 1px #000;
     }
 
 .list_text{
-    color: white;
-    font-size: 23pt;
-#    text-shadow: 1px 0 1px;
-    text-align: center
-}
+    color: #8B0000;
+    font-size: 25pt;
+    text-shadow: 1px 1 1px;
+    }
 
 .text_solid{
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: lime
-}
+    }
 
 .text_dashed{
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: tahoma, "Times New Roman", serif;
     text-decoration: underline;
     text-decoration-style: dashed;
-    text-decoration-color: yellow
-}
+    text-decoration-color: #ADFF2F
+    }
 
-.btn {
+.btn{
     display: inline-block;
-    margin-top: 500px;
-    background: #8C959D;
-    color: #fff;
+    width: 250px;
+    margin: 30px 40px;
+    background: #0000FF;
+    color: #FFFF00;
     padding: 1rem 1.5rem;
     text-decoration: none;
-    border-radius: 3px
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt;
+    border-radius: 15px;
     }
