@@ -1,0 +1,12 @@
+.btn{
+    display: inline-block;
+    width: 250px;
+    margin: 30px 40px;
+    background: #0000FF;
+    color: #FFFF00;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt;
+    border-radius: 15px;
+    }

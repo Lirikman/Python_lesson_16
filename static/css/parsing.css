@@ -1,0 +1,40 @@
+body{
+    background-image: url('/static/images/head_hunter.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    }
+
+.parsing_title{
+    color:#FFFF00;
+    margin: 205px 40px;
+    font-size: 28pt;
+    text-shadow: 1px 0 1px #000;
+    line-height: 40px;
+    word-spacing: 12px;
+    }
+
+
+.btn{
+    display: inline-block;
+    width: 300px;
+    margin: 260px 70px;
+    background: #0000FF;
+    color: #FFFF00;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt;
+    border-radius: 15px;
+    }
+
+.rect{
+    width: 400px;
+    height: 50px;
+    border: 2px solid;
+    margin: auto;
+    background: #1E90FF;
+    color: #FFFACD;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt
+    }
