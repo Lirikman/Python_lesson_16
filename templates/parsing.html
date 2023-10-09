@@ -7,19 +7,32 @@
 </head>
 <body>
     <h1 class="parsing_title">ПАРСИНГ САЙТА HEAD HUNTER<br>С ПОМОЩЬЮ PYTHON</h1>
-    <div class="rect">Выберите город</div>
-    <select class="select" name="city">
-        <option value="1">Москва</option>
-        <option value="2">Санкт-Петербург</option>
-        <option value="3">Новосибирск</option>
-    </select> <br> <br>
-    <div class="rect">Выберите вакансию</div>
-    <select class="select" name="prof">
-        <option value="1">Программист</option>
-        <option value="2">Повар</option>
-        <option value="3">Водитель</option>
-    </select> <br>
+    <form action ='/result.html' method="post">
+        <div>
+            <label class="rect">
+                Выберите город
+                <select class="select" name = 'city'>
+                <option value="1">Москва</option>
+                <option value="2">Санкт-Петербург</option>
+                <option value="3">Новосибирск</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label class="rect">
+                Выберите профессию
+                <select class="select" name='vac'>
+                    <option value="1">Программист</option>
+                    <option value="2">Повар</option>
+                    <option value="3">Водитель</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <input class="rect" type = 'submit' name = 'ПОИСК'></input>
+    </form>
     <a href="/index.html" class="btn">ГЛАВНАЯ СТРАНИЦА</a>
-    <a href="/resume.html" class="btn">РЕЗЮМЕ</a>
+    <a href="/resume.html" class="btn">ОБО МНЕ</a>
 </body>
 </html>

@@ -29,21 +29,21 @@ body{
     }
 
 .rect{
-    width: 400px;
+    width: 300px;
     height: 50px;
     border: 2px solid;
     margin:  5px auto;
     background: #1E90FF;
     color: #FFFACD;
     font-family: Verdana, "Times New Roman", serif;
-    font-size: 20pt
+    font-size: 28pt
     }
 
 .select{
-    width: 400px;
+    width: 350px;
     height: 50px;
     margin: auto;
-   font-family: Verdana, "Times New Roman", serif;
+    font-family: Verdana, "Times New Roman", serif;
     font-size: 20pt;
     text-align: center
     }
