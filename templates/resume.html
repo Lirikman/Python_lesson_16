@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Резюме</title>
-    <link href="/static/css/resume.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+Резюме
+{% endblock %}
+
+{% block css %}
+<link href="/static/css/resume.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
     <a href="/index.html" class="btn">ГЛАВНАЯ СТРАНИЦА</a>
     <a href="/parsing.html" class="btn">ПАРСИНГ PYTHON</a>
-</body>
-</html>
+{% endblock %}

@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Парсинг hh.ru</title>
-    <link href="/static/css/parsing.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+Парсинг hh.ru
+{% endblock %}
+
+{% block css %}
+<link href="/static/css/parsing.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
     <h1 class="parsing_title">ПАРСИНГ САЙТА HEAD HUNTER<br>С ПОМОЩЬЮ PYTHON</h1>
     <form action ='/result.html' method="post">
         <div>
             <label class="rect">
                 Выберите город
                 <select class="select" name = 'city'>
-                <option value="1">Москва</option>
-                <option value="2">Санкт-Петербург</option>
-                <option value="3">Новосибирск</option>
+                    <option value="1">Москва</option>
+                    <option value="2">Санкт-Петербург</option>
+                    <option value="3">Екатеринбург</option>
+                    <option value="4">Новосибирск</option>
+                    <option value="54">Красноярск</option>
                 </select>
             </label>
         </div>
@@ -23,16 +28,15 @@
             <label class="rect">
                 Выберите профессию
                 <select class="select" name='vac'>
-                    <option value="1">Программист</option>
-                    <option value="2">Повар</option>
-                    <option value="3">Водитель</option>
+                    <option value="Программист Python">Программист Python</option>
+                    <option value="Повар">Повар</option>
+                    <option value="Водитель">Водитель</option>
                 </select>
             </label>
         </div>
         <br>
-        <input class="rect" type = 'submit' name = 'ПОИСК'></input>
+        <input class="rect" type = 'submit' value = 'ПОИСК'>
     </form>
     <a href="/index.html" class="btn">ГЛАВНАЯ СТРАНИЦА</a>
     <a href="/resume.html" class="btn">ОБО МНЕ</a>
-</body>
-</html>
+{% endblock %}
