@@ -1,3 +1,4 @@
+import random
 import requests
 from flask import Flask, render_template, request
 
@@ -33,6 +34,7 @@ def result():
     result = requests.get(url, params=params).json()
     total_pages = result['pages']
     vac_json = []
+    # Расчёт средней заработной платы
     for i in range(total_pages):
         url = 'https://api.hh.ru/vacancies'
         params = {'text': f'NAME:({vac_text})', 'area': area, 'page': i, 'per_page': 20}
@@ -52,7 +54,37 @@ def result():
         all_salary += summ_salary
         all_vac += count_vac
     average_salary = all_salary // all_vac
-    return render_template('result.html', salary=average_salary)
+    # Поиск 5 случайных навыков
+    all_skills = []
+    for i in vac_json:
+        items = i['items']
+        for j in items:
+            if j['snippet'] is not None:
+                k = j['snippet']
+                if k['requirement'] is not None:
+                    all_skills.append(k['requirement'])
+    list_temp = []
+    for i in all_skills:
+        text = i.find("Требования:")
+        if text is not None:
+            list_temp.append(i[i.find("Требования:") + 1:])
+    actual_skills = []
+    for i in list_temp:
+        temp = i.split('.')
+        for j in temp:
+            if len(j) < 3:
+                temp.remove(j)
+        temp.pop()
+        for k in temp:
+            actual_skills.append(k)
+    random_skills = random.sample(actual_skills, 5)
+    skill_1 = random_skills[0]
+    skill_2 = random_skills[1]
+    skill_3 = random_skills[2]
+    skill_4 = random_skills[3]
+    skill_5 = random_skills[4]
+    return render_template('result.html', salary=average_salary, skill_1=skill_1, skill_2=skill_2, skill_3=skill_3,
+                           skill_4=skill_4, skill_5=skill_5)
 
 
 if __name__ == '__main__':
