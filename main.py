@@ -67,17 +67,22 @@ def result():
     for i in all_skills:
         text = i.find("Требования:")
         if text is not None:
-            list_temp.append(i[i.find("Требования:") + 1:])
-    actual_skills = []
+            list_temp.append(i[i.find("Требования: ") + 1:])
+    skills = []
     for i in list_temp:
-        temp = i.split('.')
+        temp = str(i).split('.')
         for j in temp:
-            if len(j) < 3:
+            if len(j) < 5:
                 temp.remove(j)
         temp.pop()
         for k in temp:
-            actual_skills.append(k)
-    random_skills = random.sample(actual_skills, 5)
+            skills.append(k)
+    for i in skills:
+        text = str(i).split()
+        if len(text) > 5:
+            if text[0] == 'Опыт':
+                skills.remove(i)
+    random_skills = random.sample(skills, 5)
     skill_1 = random_skills[0]
     skill_2 = random_skills[1]
     skill_3 = random_skills[2]
