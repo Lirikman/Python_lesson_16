@@ -23,4 +23,12 @@ body{
     color: #00FA9A;
     font-family: Verdana, "Times New Roman", serif;
     font-size: 40pt;
+    text-shadow: 5px 6px 3px #1E90FF;
+    }
+
+.table{
+    color: #FFFFE0;
+    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-size: 35pt;
+    text-shadow: 5px 6px 3px #191970;
     }
