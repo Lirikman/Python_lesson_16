@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Результат
+{% endblock %}
+
+{% block css %}
+<link href="/static/css/result.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block body %}
+<h1 class="btn">Результаты поиска</h1>
+<div>
+    <p class="text">Средняя зарплата в выбранном городе:</p>
+    <p class="salary"> {{ salary }} руб.</p>
+    <p class="text">Необходимые навыки: </p>
+    <p class="skill"> {{ skill_1 }}</p>
+    <p class="skill"> {{ skill_2 }}</p>
+    <p class="skill"> {{ skill_3 }}</p>
+    <p class="skill"> {{ skill_4 }}</p>
+    <p class="skill"> {{ skill_5 }}</p>
+</div>
+<a href="/parsing.html" class="btn_back">НАЗАД</a>
+{% endblock %}

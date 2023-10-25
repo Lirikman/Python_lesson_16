@@ -1,0 +1,55 @@
+body{
+     background-image: url('/static/images/it.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+     }
+
+.text{
+    color: #FFFF00;
+    font-family: Helvetica, "Times New Roman", serif;
+    font-size: 40pt;
+    font-weight: 600;
+    }
+
+.salary{
+    color: #FF0000;
+    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-size: 45pt;
+    font-weight: 700;
+    text-shadow: 5px 6px 3px #FFA07A;
+    }
+
+  .skill{
+    color: #7CFC00;
+    font-family: Trebuchet MS, "Times New Roman", serif;
+    font-size: 40pt;
+    font-weight: 600;
+    text-shadow: 5px 6px 3px #A52A2A;
+    }
+
+.btn{
+    display: inline-block;
+    width: 350px;
+    margin: 30px 50px;
+    background: #0000FF;
+    color: #FFFF00;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt;
+    border-radius: 15px;
+    }
+
+.btn_back{
+    display: inline-block;
+    width: 300px;
+    margin: 30px 50px;
+    background: #0000FF;
+    color: #FFFF00;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: Verdana, "Times New Roman", serif;
+    font-size: 20pt;
+    border-radius: 15px;
+    }
